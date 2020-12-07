@@ -114,7 +114,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Vimwiki
-let g:vimwiki_list = [{'path': '~/wiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Documents/wiki/', 'syntax': 'markdown', 'ext': '.md'}]
 nnoremap <Leader>c :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
 
 function! VimwikiLinkHandler(link)
