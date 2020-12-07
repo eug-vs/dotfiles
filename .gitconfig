@@ -1,0 +1,7 @@
+[user]
+	email = eug-vs@keemail.me
+	name = eug-vs
+[core]
+	editor = nvim
+[pull]
+	rebase = true
