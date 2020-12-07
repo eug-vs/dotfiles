@@ -8,3 +8,6 @@ Author: [eug-vs](https://github.com/eug-vs/)
 
 Documentation: [wiki](../Documents/wiki/index.md)
 
+## Preview
+![project-layout](../Pictures/Porn/project-layout.png)
+![neofetch](../Pictures/Porn/neofetch.png)
