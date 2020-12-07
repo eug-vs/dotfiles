@@ -6,5 +6,5 @@ Github repo: [dotfiles](https://github.com/eug-vs/dotfiles)
 
 Author: [eug-vs](https://github.com/eug-vs/)
 
-Documentation: [wiki](Documents/wiki/index.md)
+Documentation: [wiki](../Documents/wiki/index.md)
 
