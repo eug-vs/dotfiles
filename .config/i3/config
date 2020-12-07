@@ -21,8 +21,8 @@ bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ t
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Screenshot via ImageMagick
-bindsym --release Shift+Print exec --no-startup-id import screenshot.png && xclip -selection clipboard -target image/png -i < screenshot.png && rm screenshot.png
-bindsym --release Print exec --no-startup-id import -window root screenshot.png && xclip -selection clipboard -target image/png -i < screenshot.png && rm screenshot.png
+bindsym --release Shift+Print exec --no-startup-id screenshot.sh
+bindsym --release Print exec --no-startup-id screenshot.sh -window root
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
