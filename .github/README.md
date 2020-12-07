@@ -1,1 +1,0 @@
-wiki/dotfiles/index.md
