@@ -1,1 +1,1 @@
-./wiki/dotfiles/index.md
+Documents/wiki/index.md
