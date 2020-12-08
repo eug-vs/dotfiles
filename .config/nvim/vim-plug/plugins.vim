@@ -5,4 +5,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'shougo/defx.nvim',
     Plug 'kristijanhusak/defx-icons'
     Plug 't9md/vim-choosewin'
+    " Tmux navigator
+    Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
