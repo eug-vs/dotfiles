@@ -5,9 +5,6 @@ I've decided to switch back to classic Neovim and keep configuration as tight an
 
 I keep my configuration in casual `~/.vimrc` which is sourced by Neovim in `init.vim`.
 
-## NerdFonts
-I use `DejaVu Sans Mono` - download from [AUR](https://aur.archlinux.org/packages/nerd-fonts-dejavu-complete/)
-
 ## Vim-plug
 Some functionality still requires me to install a few plugins, and `vim-plug` is my plugin manager of choice.
 Intsallation (note that command is custom):

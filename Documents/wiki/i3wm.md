@@ -1,11 +1,10 @@
 # i3wm
 
-## Workspace generator
-Script `~/.vifm/scripts/i3-workspace.sh` provides an easy-to-use layout generator:
-```bash
-./i3-workspace.sh ~/path/to/my/working/directory
-```
-It open opens `nvim` + 2 instances of `alacritty` in a new workspace. This script is aliasde to `:w` command in `vifm`.
+## Application launcher
+I use `Rofi` (unconfigured) instead of `dmenu`: https://github.com/davatorium/rofi
+
+## Screenshots
+I use `ImageMagick` to make screenshots, see `[~/.local/bin/screenshot.sh](../../.local/bin/screenshot.sh)`.
 
 ## Bassboost mode
 While key combination `win+b` is pressed, **crazy mic bassboost mode** is active. Basically it's just the toggle between two mic volumes - default and very high (up to the point when it starts distorting).
