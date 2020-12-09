@@ -4,7 +4,7 @@
 I use `Rofi` (unconfigured) instead of `dmenu`: https://github.com/davatorium/rofi
 
 ## Screenshots
-I use `ImageMagick` to make screenshots, see `[~/.local/bin/screenshot.sh](../../.local/bin/screenshot.sh)`.
+I use `ImageMagick` to make screenshots, see [`~/.local/bin/screenshot.sh`](../../.local/bin/screenshot.sh).
 
 ## Bassboost mode
 While key combination `win+b` is pressed, **crazy mic bassboost mode** is active. Basically it's just the toggle between two mic volumes - default and very high (up to the point when it starts distorting).
