@@ -8,6 +8,23 @@ Author: [eug-vs](https://github.com/eug-vs/)
 
 Documentation: [wiki](../Documents/wiki/index.md)
 
-## Preview
+## Installation
+1. Checkout into bare git repository:
+   ```sh
+   git clone --bare https://github.com/eug-vs/dotfiles $HOME/.dotfiles.git
+   ```
+2. Setup local alias to simplify your life:
+   ```
+   alias config='git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
+   ```
+3. Hide untracked files:
+   ```
+   config config --local status.showUntrackedFiles no
+   ```
+4. Backup you current dotfiles (if any)
+5. Run `git checkout master`
+
+## Screenshots
 ![project-layout](../Pictures/Porn/project-layout.png)
 ![neofetch](../Pictures/Porn/neofetch.png)
+
