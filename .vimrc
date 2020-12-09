@@ -25,8 +25,7 @@ set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 
-" enable gruvbox colorscheme from AUR:
-" https://aur.archlinux.org/packages/vim-gruvbox-git/
+" enable gruvbox colorscheme:
 autocmd vimenter * ++nested colorscheme gruvbox
 
 " vimrc management
