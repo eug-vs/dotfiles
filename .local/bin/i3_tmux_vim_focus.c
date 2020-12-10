@@ -36,8 +36,7 @@ int main(int argc, char *argv[]) {
     xdo_get_active_window(xdo, &window_ret);
     xdo_get_window_name(xdo, window_ret, &name, &name_len, &name_type);
 
-    puts(name);
-    if(strstr(name, "VIM") || strstr(name, "vim") && !strstr(name, "i3_tmux_vim_focus"))
+    if(strstr(name, "VIM") || strstr(name, "vim"))
     {
         strcpy(cmd, "Ctrl+c+Ctrl+");
 
@@ -46,8 +45,6 @@ int main(int argc, char *argv[]) {
                     (argv[1][0] == 'd')? "j" :
                     (argv[1][0] == 'u')? "k" :
                                          "l" );
-        puts(cmd);
-
         xdo_send_keysequence_window(xdo, window_ret, cmd, 0);
     }
     else if(strstr(name, "tmux"))
