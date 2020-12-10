@@ -43,10 +43,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show combi -theme gruvbox-dark-soft
 
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+h exec "xdotool keyup Super h && i3_tmux_vim_focus left && xdotool keydown Super"
+bindsym $mod+j exec "xdotool keyup Super j && i3_tmux_vim_focus down && xdotool keydown Super"
+bindsym $mod+k exec "xdotool keyup Super k && i3_tmux_vim_focus up && xdotool keydown Super"
+bindsym $mod+l exec "xdotool keyup Super l && i3_tmux_vim_focus right && xdotool keydown Super"
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left

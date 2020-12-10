@@ -6,7 +6,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kristijanhusak/defx-icons'
     Plug 't9md/vim-choosewin'
     " Tmux navigator
-    Plug 'christoomey/vim-tmux-navigator'
+    " Plug 'christoomey/vim-tmux-navigator'
+    Plug 'fogine/vim-i3wm-tmux-navigator'
     " Color scheme
     Plug 'morhetz/gruvbox'
     " Editorconfig
