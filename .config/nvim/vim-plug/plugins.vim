@@ -9,4 +9,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'christoomey/vim-tmux-navigator'
     " Color scheme
     Plug 'morhetz/gruvbox'
+    " Editorconfig
+    Plug 'editorconfig/editorconfig-vim'
 call plug#end()
