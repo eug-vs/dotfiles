@@ -1,7 +1,7 @@
 font:
   normal:
     family: DejaVuSansMono Nerd Font
-  size: 7
+  size: 6
 
 # Gruvbox theme
 colors:
