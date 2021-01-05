@@ -204,5 +204,5 @@ bar {
 exec volnoti
 exec hsetroot -cover ~/Pictures/wallpaper.jpg
 exec redshift -P &
-exec picom -c -i 0.9 -D 0 &
+exec sleep 2 && picom --config ~/.picom.conf &
 
