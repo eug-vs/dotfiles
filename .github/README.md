@@ -22,7 +22,7 @@ Documentation: [wiki](../Documents/wiki/index.md)
    config config --local status.showUntrackedFiles no
    ```
 4. Backup you current dotfiles (if any)
-5. Run `git checkout master`
+5. Run `config checkout master`
 
 ## Screenshots
 ![project-layout](../Pictures/Porn/project-layout.png)
