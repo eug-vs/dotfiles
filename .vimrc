@@ -8,6 +8,7 @@ syntax enable
 filetype plugin on
 
 " general stuff
+set mouse=a
 set number
 set relativenumber
 set cursorline
@@ -24,6 +25,9 @@ set autoindent                          " Good auto indent
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+set termguicolors
+set ignorecase
+set smartcase
 
 " enable gruvbox colorscheme:
 autocmd vimenter * ++nested colorscheme gruvbox
@@ -34,7 +38,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " windows
 set splitbelow
-set splitright 
+set splitright
 nnoremap <TAB> <C-w>w
 nnoremap <S-TAB> <C-w>W
 nnoremap <c-h> <C-w>h
@@ -97,6 +101,7 @@ autocmd VimEnter *
 set path=.,**
 set wildmenu
 set wildignore+=**/node_modules/**,**/build/**,**/dist/**,**/__pycache__/**
+set wildmode=longest,list,full
 
 " tags
 command! MakeTags !ctags -R -f .git/tags --tag-relative --exclude=node_modules --exclude=.git --exclude=build --exclude=dist --map-Typescript=+.tsx
@@ -111,6 +116,9 @@ augroup END
 " easier indentation
 vnoremap < <gv
 vnoremap > >gv
+
+" remove trailing spaces on save
+autocmd BufWritePre * %s/\s\+$//e
 
 " Vimwiki
 let g:vimwiki_list = [{'path': '~/Documents/wiki/', 'syntax': 'markdown', 'ext': '.md'}]
