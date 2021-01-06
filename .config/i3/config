@@ -20,6 +20,12 @@ bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAUL
 bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle && if amixer get Master | grep -Fq '[off]'; then volnoti-show -m; else $show_volume; fi"
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+# Use playerctl to respond to multimedia keys
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next
+
+
 # Screenshot via ImageMagick
 bindsym --release Shift+Print exec --no-startup-id screenshot.sh
 bindsym --release Print exec --no-startup-id screenshot.sh -window root
