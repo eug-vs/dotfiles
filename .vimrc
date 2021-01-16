@@ -59,14 +59,11 @@ function! s:defx_my_settings() abort
   \ defx#is_directory() ?
   \ defx#do_action('open_tree') :
   \ defx#do_action('open', 'choose')
-  nnoremap <silent><buffer><expr> h
-  \ defx#do_action('close_tree')
-  nnoremap <silent><buffer><expr> dd
-  \ defx#do_action('remove')
-  nnoremap <silent><buffer><expr> cw
-  \ defx#do_action('rename')
-  nnoremap <silent><buffer><expr> q
-  \ defx#do_action('quit')
+  nnoremap <silent><buffer><expr> h defx#do_action('close_tree')
+  nnoremap <silent><buffer><expr> dd defx#do_action('remove')
+  nnoremap <silent><buffer><expr> cw defx#do_action('rename')
+  nnoremap <silent><buffer><expr> n defx#do_action('new_file')
+  nnoremap <silent><buffer><expr> q defx#do_action('quit')
 endfunction
 
 call defx#custom#option('_', {
