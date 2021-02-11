@@ -30,6 +30,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym --release Shift+Print exec --no-startup-id screenshot.sh
 bindsym --release Print exec --no-startup-id screenshot.sh -window root
 
+# Use $mod+p to move workspaces between monitors
+bindsym $mod+p move workspace to output right
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
