@@ -25,6 +25,9 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioNext exec playerctl next
 
+# Use XBackLight to respond to brightness keys
+bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 10"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10"
 
 # Screenshot via ImageMagick
 bindsym --release Shift+Print exec --no-startup-id screenshot.sh
