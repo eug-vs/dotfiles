@@ -19,4 +19,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-gitgutter'
      " Matching brackets
     Plug 'Raimondi/delimitMate'
+    Plug 'tonchis/vim-to-github'
 call plug#end()
