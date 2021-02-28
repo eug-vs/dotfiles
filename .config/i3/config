@@ -100,10 +100,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
+set $ws1 "1:  "
+set $ws2 "2:  "
+set $ws3 "3:  "
+set $ws4 "4:  "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -211,7 +211,7 @@ bar {
           background #111111
           focused_workspace $yellow $yellow #000000
           active_workspace #333333 #333333 $purple
-          inactive_workspace #CECECE #333333 #f1f1f1
+          inactive_workspace #333333 #333333 #f1f1f1
           urgent_workspace #eb709b #eb709b #ffffff
         }
 }
