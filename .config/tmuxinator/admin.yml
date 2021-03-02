@@ -1,0 +1,9 @@
+name: admin
+root: ~/
+
+windows:
+  - explorer:
+      layout: main-vertical
+      panes:
+        - vifm
+        - config status

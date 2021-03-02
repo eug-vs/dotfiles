@@ -10,10 +10,6 @@ I use the same set of keys (`<C-[hjkl]>` - without prefix!) to navigate between 
 
 Plugin: https://github.com/christoomey/vim-tmux-navigator
 
-## Save/restore sessions on reboot
- - `prefix` + `<C-s>` - save session
- - `prefix` + `<C-r>` - restore session
+## Project management with Tmuxinator
+I use [tmuxinator](https://github.com/tmuxinator/tmuxinator) for managing projects and sessions. Here's the [admin session example](../../.config/tmuxinator/admin.yml).
 
-**TODO:** restore vim sessions as well
-
-Plugin: https://github.com/tmux-plugins/tmux-resurrect

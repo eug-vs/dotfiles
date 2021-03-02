@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=nvim
 
 ZSH_THEME="ys"
 
@@ -16,3 +17,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=$PATH:~/.local/bin
+
