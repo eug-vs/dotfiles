@@ -6,4 +6,4 @@ windows:
       layout: main-vertical
       panes:
         - vifm
-        - config status
+        - clear && echo "\n" && neofetch
