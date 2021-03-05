@@ -11,3 +11,5 @@ Seamless navigation with `vim` (`<C-[hjkl]>`): https://github.com/christoomey/vi
 Manage sessions: https://github.com/tmuxinator/tmuxinator
 
 Startup tmuxinator sessions quickly: https://github.com/viniarck/rofi-tmux
+
+My admin session: [admin.yml](../../.config/tmuxinator/admin.yml)
