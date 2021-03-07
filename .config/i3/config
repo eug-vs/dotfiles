@@ -49,6 +49,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show combi -theme gruvbox-dark-soft
 # start tmuxinator project selector
 bindsym $mod+q exec rft lp
+# start bitwarden-rofi
+bindsym $mod+z exec bwmenu
 
 # change focus
 bindsym $mod+h focus left
