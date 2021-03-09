@@ -220,6 +220,7 @@ bar {
         }
 }
 
+exec tmuxinator start admin
 exec volnoti
 exec hsetroot -cover ~/Pictures/wallpaper.jpg
 exec redshift -P &
