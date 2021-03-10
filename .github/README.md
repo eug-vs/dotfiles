@@ -27,5 +27,4 @@ Documentation: [wiki](../Documents/wiki/index.md)
 ## Screenshots
 ![neofetch](../Pictures/Porn/neofetch.png)
 ![project-layout](../Pictures/Porn/project-layout.png)
-![spotify](../Pictures/Porn/spotify.png)
 
