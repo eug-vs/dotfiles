@@ -6,10 +6,9 @@ ZSH_THEME="ys"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-alias pass='lpass show -cp'
-
 alias vi=nvim
 alias vim=nvim
+alias mux=tmuxinator
 alias config='git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
 
 export NVM_DIR="$HOME/.nvm"
