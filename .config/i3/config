@@ -220,7 +220,11 @@ bar {
         }
 }
 
+# Create tmux session
 exec tmuxinator start admin
+exec i3-msg "workspace 3:  ;"
+exec alacritty -e zsh -c "tmux a; zsh"
+
 exec volnoti
 exec hsetroot -cover ~/Pictures/wallpaper.jpg
 exec redshift -P &
