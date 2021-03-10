@@ -52,6 +52,12 @@ nnoremap <silent> <F3> :Defx<CR>
 autocmd FileType defx call s:defx_my_settings()
 autocmd BufEnter * if(winnr("$") == 1 && &ft == 'defx') | q | endif
 
+function! SmartTabEdit(context) abort
+  tabnew
+  execute "e " . a:context.targets[0]
+  tabp
+endfunction
+
 function! s:defx_my_settings() abort
   set nonumber
   set norelativenumber
@@ -60,6 +66,7 @@ function! s:defx_my_settings() abort
   \ defx#is_directory() ?
   \ defx#do_action('open_tree') :
   \ defx#do_action('open', 'choose')
+  nnoremap <silent><buffer><expr> t defx#do_action('call', 'SmartTabEdit')
   nnoremap <silent><buffer><expr> h defx#do_action('close_tree')
   nnoremap <silent><buffer><expr> dd defx#do_action('remove')
   nnoremap <silent><buffer><expr> cw defx#do_action('rename')
