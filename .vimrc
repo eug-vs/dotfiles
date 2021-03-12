@@ -51,6 +51,7 @@ nnoremap <c-l> <C-w>l
 nnoremap <silent> <F3> :Defx<CR>
 autocmd FileType defx call s:defx_my_settings()
 autocmd BufEnter * if(winnr("$") == 1 && &ft == 'defx') | q | endif
+autocmd BufWritePost * call defx#redraw()
 
 function! SmartTabEdit(context) abort
   tabnew
