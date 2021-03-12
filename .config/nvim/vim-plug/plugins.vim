@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Dark-powered file explorer
     Plug 'shougo/defx.nvim',
     Plug 'kristijanhusak/defx-icons'
+    Plug 'kristijanhusak/defx-git'
     Plug 't9md/vim-choosewin'
     " Tmux navigator
     Plug 'christoomey/vim-tmux-navigator'
