@@ -141,7 +141,7 @@ command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
-command! w :!bootstrap.sh %d/%c
+command! w :!tmuxinator start -p=$HOME/.config/tmuxinator/.template.yml name=%c root=%d/%c
 
 " ------------------------------------------------------------------------------
 
