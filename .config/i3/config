@@ -21,9 +21,9 @@ bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ t
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Use playerctl to respond to multimedia keys
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPlay exec playerctl --player=spotify play-pause
+bindsym XF86AudioPrev exec playerctl --player=spotify previous
+bindsym XF86AudioNext exec playerctl --player=spotify next
 
 # Use XBackLight to respond to brightness keys
 bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 10"
