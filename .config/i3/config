@@ -91,7 +91,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+f floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -196,14 +196,14 @@ set $darkgray #1d2021
 
 # green gruvbox
 # class                 border|backgr|text|indicator|child_border
-client.focused          $darkgray $yellow $darkgray $purple $darkgray
+client.focused          $darkgray $yellow $darkgray $purple $yellow
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
 
 # i3gaps
-for_window [class=".*"] border pixel 0
-gaps inner 12
+for_window [class=".*"] border pixel 1
+gaps inner 28
 
 # i3blocks
 bar {
@@ -228,5 +228,5 @@ exec alacritty -e zsh -c "tmux a; zsh"
 exec volnoti
 exec hsetroot -cover ~/Pictures/wallpaper.jpg
 exec redshift -P &
-exec sleep 2 && picom --config ~/.picom.conf &
+exec picom -c -i 1.0 -D 0 &
 
