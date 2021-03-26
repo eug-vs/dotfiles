@@ -143,6 +143,11 @@ command! vgrep vim "+grep %a"
 command! reload :write | restart
 command! w :!tmuxinator start -p=$HOME/.config/tmuxinator/.template.yml name=%c root=%d/%c
 
+" Swallows
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.webp swallow sxiv %f
+filextype *.mp4,*.webm swallow mpv %f
+filextype *.pdf swallow zathura %f
+
 " ------------------------------------------------------------------------------
 
 " The file type is for the default programs to be used with
