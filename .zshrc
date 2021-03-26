@@ -25,6 +25,7 @@ alias mux=tmuxinator
 alias config='git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
 
 # Env
+export LESS=R # Option to less so that git log/diff hide output after exit
 export EDITOR=nvim
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
