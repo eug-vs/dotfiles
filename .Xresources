@@ -1,0 +1,11 @@
+#define font dejavusansmono nerd font:size=10
+#define color_black #000000
+#define color_dark #111111
+#define color_light #bbbbbb
+#define color_primary #d79921
+
+*.font: font
+*.background: color_dark
+*.foreground: color_light
+*.selbackground: color_primary
+*.selforeground: color_dark
