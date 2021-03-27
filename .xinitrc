@@ -31,11 +31,16 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # increase keyboard speed
-xset r rate 250 22
+xset r rate 250 50
 
-# change bell sound
-xset b 5 150 300
+exec tmuxinator start admin &
+exec redshift -P &
+exec picom -c -i 1.0 -D 0 -r 12 &
+exec hsetroot -cover ~/Pictures/wallpaper.jpg &
+exec sxhkd &
+exec dwmblocks &
 
-# start i3 window manager
-exec i3
-
+# Start dwm with restart behaviour
+while true; do
+    dwm >/dev/null 2>&1
+done
