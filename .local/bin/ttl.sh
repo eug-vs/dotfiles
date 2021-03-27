@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Fix default TTL and disable ipv6 making changes permanent
 # TODO: replace wlo1 with automatically detected device name
 

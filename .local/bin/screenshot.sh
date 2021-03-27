@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Screenshot via ImageMagick
 # Passes all args down to import command
 
