@@ -31,3 +31,6 @@ Print
 super + space
   pkill -RTMIN+4 dwmblocks
 
+super + q
+  tmuxinator-menu.sh
+
