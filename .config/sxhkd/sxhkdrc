@@ -28,3 +28,6 @@ shift + Print
 Print
   screenshot.sh -window root
 
+super + space
+  pkill -RTMIN+4 dwmblocks
+
