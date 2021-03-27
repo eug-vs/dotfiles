@@ -36,7 +36,7 @@ xset r rate 250 50
 exec tmuxinator start admin &
 exec redshift -P &
 exec picom -c -i 1.0 -D 0 -r 12 &
-exec hsetroot -cover ~/Pictures/wallpaper.jpg &
+exec xwallpaper --zoom ~/Pictures/wallpaper.jpg &
 exec sxhkd &
 exec dwmblocks &
 
