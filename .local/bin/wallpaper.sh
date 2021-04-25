@@ -1,5 +1,4 @@
 #!/bin/sh
-# Launch SXIV and set wallpaper randomly from selected images
+# Launch SXIV in wallpapers dir, C-x-w to set wallpaper
 
-WALLPAPERS_DIR=~/Pictures/Wallpapers
-xwallpaper --zoom $(sxiv $WALLPAPERS_DIR -t -o | shuf | head -n 1)
+sxiv -t ~/Pictures/Wallpapers
