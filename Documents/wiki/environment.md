@@ -1,6 +1,8 @@
 # Environment
 I try to keep my desktop very minimal and [suckless](https://suckless.org).
 
+![docs screenshot](../../Pictures/Porn/docs.png)
+
 ## General
 
 ### Dynamic Window Manager
