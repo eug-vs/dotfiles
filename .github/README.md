@@ -25,6 +25,6 @@ Documentation: [wiki](../Documents/wiki/index.md)
 5. Run `config checkout master`
 
 ## Screenshots
-![neofetch](../Pictures/Porn/neofetch.png)
-![project-layout](../Pictures/Porn/project-layout.png)
+![docs](../Pictures/Porn/docs.png)
+![spotify](../Pictures/Porn/spotify.png)
 
