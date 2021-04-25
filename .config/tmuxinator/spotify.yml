@@ -1,0 +1,9 @@
+name: spotify
+root: ~/
+
+windows:
+  - player:
+      layout: main-horizontal
+      panes:
+        - ncspot
+        - pulsemixer
