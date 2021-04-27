@@ -1,0 +1,8 @@
+colors.scheme=gruvbox
+colors.override.terminal=false
+
+visualizer.spectrum.falloff.mode=top
+visualizer.spectrum.smoothing.mode=sgs
+visualizer.spectrum.top.margin=0.1
+
+audio.stereo.enabled=false

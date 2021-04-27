@@ -2,4 +2,9 @@ name: spotify
 
 windows:
   - player: ncspot
-  - mixer: pulsemixer
+  - mixer:
+      layout: main-horizontal
+      panes:
+        - vis
+        - pulsemixer
+
