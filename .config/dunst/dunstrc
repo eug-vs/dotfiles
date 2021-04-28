@@ -18,7 +18,7 @@
     padding = 20
     horizontal_padding = 12
     separator_height = 1
-    separator_color = "#d79921"
+    separator_color = "#ebdbb2"
     startup_notification = false
 
 [frame]
@@ -48,7 +48,7 @@
 
 [ncspot]
   appname = ncspot
-  format = "<b> %s</b>"
+  format = " %s"
 
 [slack]
   appname = slack
