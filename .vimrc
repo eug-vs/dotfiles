@@ -127,7 +127,7 @@ set tags+=.git/tags
 " enable typescipt highlighting
 augroup SyntaxSettings
     autocmd!
-    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
 augroup END
 
 " easier indentation
@@ -138,7 +138,14 @@ vnoremap > >gv
 autocmd BufWritePre * %s/\s\+$//e
 
 " Vimwiki
-let g:vimwiki_list = [{'path': '~/Documents/wiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [
+  \ {'path': '~/Sync/', 'syntax': 'markdown', 'ext': '.md', 'auto_generate_links': 1},
+  \ {'path': '~/Documents/wiki/', 'syntax': 'markdown', 'ext': '.md'},
+\]
+
+let g:vimwiki_markdown_link_ext = 1
+let g:calendar_options = 'nornu'
+
 nnoremap <Leader>c :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
 
 function! VimwikiLinkHandler(link)
@@ -155,6 +162,19 @@ function! VimwikiLinkHandler(link)
   else
     exe 'e ' . fnameescape(link_infos.filename)
     return 1
+  endif
+endfunction
+
+" Coc.nvim
+nmap <silent> gd <Plug>(coc-definition)
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+nnoremap <silent> <Leader>t :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
   endif
 endfunction
 
