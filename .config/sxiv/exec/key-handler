@@ -10,6 +10,6 @@ do
         "C-c")
                 echo -n "$file" | xclip -selection clipboard ;;
         "C-w")
-                echo "$file" && xwallpaper --zoom "$file" ;;
+                xwallpaper --zoom "$file" ;;
         esac
 done
