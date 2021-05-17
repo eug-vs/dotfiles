@@ -38,6 +38,7 @@ exec picom -c -i 1.0 -D 0 -r 12 &
 exec xwallpaper --zoom ~/Pictures/Wallpapers/wallpaper.jpg &
 exec sxhkd &
 exec dwmblocks &
+exec redshift -l 53.54:27.34 &
 
 # Start dwm with restart behaviour
 while true; do
