@@ -9,17 +9,18 @@
     show_age_threshold = 60
     word_wrap = yes
     ignore_newline = no
-    geometry = "280x5-12+42"
+    geometry = "300x5-12+42"
     transparency = 0
     idle_threshold = 120
     follow = keyboard
     sticky_history = yes
     line_height = 8
-    padding = 20
+    padding = 12
     horizontal_padding = 12
     separator_height = 1
     separator_color = "#ebdbb2"
     startup_notification = false
+    max_icon_size = 72
 
 [frame]
     width = 0
@@ -46,10 +47,3 @@
     foreground = "#ebdbb2"
     timeout = 0
 
-[ncspot]
-  appname = ncspot
-  format = " %s"
-
-[slack]
-  appname = slack
-  format = "<b> %s</b>\n%b"
