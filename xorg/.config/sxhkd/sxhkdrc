@@ -1,0 +1,38 @@
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+2 dwmblocks
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+2 dwmblocks
+
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+2 dwmblocks
+
+XF86AudioPlay
+  playerctl --player=spotify play-pause
+
+XF86AudioPrev
+  playerctl --player=spotify previous && sleep 0.1 && pkill -RTMIN+1 dwmblocks
+
+XF86AudioNext
+  playerctl --player=spotify next && sleep 0.1 && pkill -RTMIN+1 dwmblocks
+
+XF86MonBrightnessUp
+  xbacklight -inc 10 && pkill -RTMIN+3 dwmblocks
+
+XF86MonBrightnessDown
+  xbacklight -dec 10 && pkill -RTMIN+3 dwmblocks
+
+shift + Print
+  screenshot.sh
+
+Print
+  screenshot.sh -window root
+
+super + space
+  pkill -RTMIN+4 dwmblocks
+
+super + q
+  tmuxinator-menu.sh
+
+super + x
+  tmux-kill-menu.sh
