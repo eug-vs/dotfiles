@@ -1,0 +1,100 @@
+# Files
+data.location=~/.task
+
+# Lower urgency of blocking tasks, default 8.0
+urgency.blocking.coefficient=7.0
+
+# Calendar
+displayweeknumber=0
+calendar.details=full
+calendar.holidays=none
+calendar.legend=0
+
+# Report meant to be piped into scripts
+report.scriptable.columns = description
+report.scriptable.filter  = status:pending
+report.scriptable.sort    = urgency-
+
+# My custom Gruvbox-like theme based on dark-16
+rule.precedence.color=deleted,completed,active,keyword.,tag.,project.,overdue,scheduled,due.today,due,blocked,blocking,recurring,tagged,uda.
+
+# General decoration
+color.label=
+color.label.sort=
+color.alternate=on gray2
+color.header=cyan
+color.footnote=cyan
+color.warning=black on yellow
+color.error=white on red
+color.debug=blue
+
+# Task state
+color.completed=
+color.deleted=
+color.active=black on bright yellow
+color.recurring=rgb343
+color.scheduled=
+color.until=
+color.blocked=red
+color.blocking=bold red
+
+# Project
+color.project.none=
+
+# Priority
+color.uda.priority.H=rgb450
+color.uda.priority.M=rgb030
+color.uda.priority.L=rgb010
+
+# Tags
+color.tag.next=
+color.tag.none=
+color.tagged=
+
+# Due
+color.due=yellow
+color.overdue=red
+
+# Report: burndown
+color.burndown.pending=on rgb110
+color.burndown.started=on rgb430
+color.burndown.done=on cyan
+
+# Report: history
+color.history.add=color0 on rgb110
+color.history.done=color0 on rgb430
+color.history.delete=white on gray4
+
+# Report: summary
+color.summary.bar=white on rgb330
+color.summary.background=white on rgb110
+
+# Command: calendar
+color.calendar.due=black on bright yellow
+color.calendar.due.today=black on yellow
+color.calendar.holiday=black on cyan
+color.calendar.overdue=black on bright red
+color.calendar.today=black on green
+color.calendar.weekend=cyan
+color.calendar.weeknumber=green
+
+# Command: sync
+color.sync.added=gray4
+color.sync.changed=rgb430
+color.sync.rejected=rgb110
+
+# Command: undo
+color.undo.before=rgb021
+color.undo.after=rgb042
+
+uda.reviewed.type=date
+uda.reviewed.label=Reviewed
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns=uuid
+report._reviewed.sort=reviewed+,modified+
+report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
+context.office=-@shop -@home -@out
+context.home=-@work
+context.creative=+writing or +rnd
+context.braindead=+out or -writing -rnd -@laptop -@phone -@work
+context=office
