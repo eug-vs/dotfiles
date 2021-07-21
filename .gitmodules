@@ -1,0 +1,12 @@
+[submodule "env/Documents/Projects/dwmblocks"]
+	path = env/Documents/Projects/dwmblocks
+	url = git@github.com:eug-vs/dwmblocks.git
+[submodule "env/Documents/Projects/dwm"]
+	path = env/Documents/Projects/dwm
+	url = git@github.com:eug-vs/dwm.git
+[submodule "env/Documents/Projects/st"]
+	path = env/Documents/Projects/st
+	url = git@github.com:eug-vs/st.git
+[submodule "env/Documents/Projects/dmenu"]
+	path = env/Documents/Projects/dmenu
+	url = git@github.com:eug-vs/dmenu.git
