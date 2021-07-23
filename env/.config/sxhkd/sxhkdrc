@@ -36,3 +36,12 @@ super + q
 
 super + x
   tmux-kill-menu.sh
+
+super + v
+  st -e vifm
+
+super + e
+  st -e neomutt
+
+super + w
+  brave
