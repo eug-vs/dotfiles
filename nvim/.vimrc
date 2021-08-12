@@ -71,7 +71,7 @@ function! s:defx_my_settings() abort
   nnoremap <silent><buffer><expr> h defx#do_action('close_tree')
   nnoremap <silent><buffer><expr> dd defx#do_action('remove')
   nnoremap <silent><buffer><expr> cw defx#do_action('rename')
-  nnoremap <silent><buffer><expr> n defx#do_action('new_file')
+  nnoremap <silent><buffer><expr> o defx#do_action('new_file')
   nnoremap <silent><buffer><expr> q defx#do_action('quit')
 endfunction
 
@@ -82,7 +82,7 @@ call defx#custom#option('_', {
 \ 'buffer_name': 'explorer',
 \ 'split': 'vertical',
 \ 'direction': 'topleft',
-\ 'columns': 'space:indent:git:icons:filename:mark',
+\ 'columns': 'space:indent:git:icons:space:filename:mark',
 \ 'winwidth': 30,
 \ })
 
