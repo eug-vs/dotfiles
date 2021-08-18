@@ -14,6 +14,10 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
+# FZF
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line

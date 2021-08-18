@@ -1,13 +1,15 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify', {'branch': 'center'}
     Plug 'vimwiki/vimwiki'
-    Plug 'mattn/calendar-vim'
     Plug 'tonchis/vim-to-github'
     " Dark-powered file explorer
     Plug 'shougo/defx.nvim',
     Plug 'kristijanhusak/defx-icons'
     Plug 'kristijanhusak/defx-git'
     Plug 't9md/vim-choosewin'
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
     " Tmux navigator
     Plug 'christoomey/vim-tmux-navigator'
     " Color scheme
@@ -24,6 +26,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-gitgutter'
      " Matching brackets
     Plug 'Raimondi/delimitMate'
-    " Hardime
-    Plug 'takac/vim-hardtime'
 call plug#end()

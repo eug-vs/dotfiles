@@ -47,6 +47,11 @@ nnoremap <c-j> <C-w>j
 nnoremap <c-k> <C-w>k
 nnoremap <c-l> <C-w>l
 
+# fzf.vim
+nnoremap <leader>r :Rg<CR>
+nnoremap <leader>f :FZF<CR>
+nnoremap <leader>g :GFiles<CR>
+
 " Defx
 nnoremap <silent> <F3> :Defx<CR>
 autocmd FileType defx call s:defx_my_settings()
