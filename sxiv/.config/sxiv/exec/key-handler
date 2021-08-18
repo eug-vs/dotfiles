@@ -9,7 +9,7 @@ do
         "C-r")
                 convert -rotate 90 "$file" "$file" ;;
         "C-c")
-                echo -n "$file" | xclip -selection clipboard ;;
+                xclip -selection clipboard -target image/png -i < "$file" ;;
         "C-w")
                 ln -sf "$file" "$WALLPAPER_LOCATION" && xwallpaper --zoom "$file" ;;
         esac
