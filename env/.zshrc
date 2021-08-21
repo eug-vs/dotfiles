@@ -4,10 +4,11 @@ bindkey -e
 
 # History in cache directory:
 export HISTSIZE=10000
-export SAVEHIST=
+export SAVEHIST=10000000
 export HISTFILE=~/.cache/zsh/history
 setopt HIST_IGNORE_ALL_DUPS
 setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 # Completion
 autoload -U compinit
