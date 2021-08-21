@@ -1,5 +1,5 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-    Plug 'mhinz/vim-startify', {'branch': 'center'}
+    Plug 'mhinz/vim-startify'
     Plug 'vimwiki/vimwiki'
     Plug 'tonchis/vim-to-github'
     " Dark-powered file explorer
@@ -7,9 +7,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kristijanhusak/defx-icons'
     Plug 'kristijanhusak/defx-git'
     Plug 't9md/vim-choosewin'
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
     " Tmux navigator
     Plug 'christoomey/vim-tmux-navigator'
     " Color scheme
@@ -28,4 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Built-in LSP
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
+    " Telescope
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
 call plug#end()

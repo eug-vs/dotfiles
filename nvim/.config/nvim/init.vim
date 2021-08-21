@@ -59,11 +59,14 @@ autocmd BufWritePre * %s/\s\+$//e
 nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
+" Telescope
+nnoremap <Leader>ff :Telescope find_files<CR>
+nnoremap <Leader>fr :Telescope live_grep<CR>
+
 " Plugin-specific configuration
 source ~/.config/nvim/startify.vim
 source ~/.config/nvim/defx.vim
 source ~/.config/nvim/vimwiki.vim
-source ~/.config/nvim/fzf.vim
 
 lua require('lsp-config')
 lua require('completion')
