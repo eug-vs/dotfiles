@@ -56,7 +56,7 @@ vnoremap > >gv
 autocmd BufWritePre * %s/\s\+$//e
 
 " Vimrc management
-nnoremap <leader>ev :vs ~/.vimrc<CR>
+nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " Plugin-specific configuration

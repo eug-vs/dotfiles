@@ -7,8 +7,8 @@ let g:startify_padding_left = 4
 let g:startify_custom_header = startify#pad(startify#fortune#cowsay('', '═','║','╔','╗','╝','╚'))
 
 let g:startify_bookmarks = [
-  \ { 'r': '~/.vimrc' },
   \ { 'z': '~/.zshrc' },
+  \ { 'r': '~/.config/nvim/init.vim' },
 \ ]
 
 let g:startify_lists = [
