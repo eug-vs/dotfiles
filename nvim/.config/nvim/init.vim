@@ -60,8 +60,8 @@ nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " Telescope
-nnoremap <Leader>ff :Telescope find_files<CR>
-nnoremap <Leader>fr :Telescope live_grep<CR>
+nnoremap <Leader>f :Telescope find_files<CR>
+nnoremap <Leader>r :Telescope live_grep<CR>
 
 " Plugin-specific configuration
 source ~/.config/nvim/startify.vim
