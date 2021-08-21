@@ -63,6 +63,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 source ~/.config/nvim/startify.vim
 source ~/.config/nvim/defx.vim
 source ~/.config/nvim/vimwiki.vim
-source ~/.config/nvim/coc.vim
 source ~/.config/nvim/fzf.vim
 
+lua require('lsp-config')
+lua require('completion')
