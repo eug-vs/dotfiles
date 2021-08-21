@@ -3,9 +3,11 @@ PS1="%B%{$fg[white]%}[%{$fg[cyan]%}%n%{$fg[white]%}@%{$fg[green]%}%M %{$fg[yello
 bindkey -e
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+export HISTSIZE=10000
+export SAVEHIST=
+export HISTFILE=~/.cache/zsh/history
+setopt HIST_IGNORE_ALL_DUPS
+setopt INC_APPEND_HISTORY
 
 # Completion
 autoload -U compinit
@@ -25,6 +27,11 @@ bindkey '^e' edit-command-line
 # Aliases
 alias vi=nvim
 alias vim=nvim
+alias vf=vifm
+alias g=git
+alias t=task
+alias tw=timew
+alias s="sudo systemctl"
 
 # Env
 export LESS=R # Option to less so that git log/diff hide output after exit
