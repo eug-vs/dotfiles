@@ -18,6 +18,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Telescope
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
     " Misc
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'editorconfig/editorconfig-vim'

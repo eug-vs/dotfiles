@@ -34,7 +34,7 @@ set shiftwidth=2
 set showtabline=2
 
 " Colorscheme
-autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme gruvbox
 
 " Built-in fuzzy-finder
 set path=.,**
@@ -60,7 +60,7 @@ nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " Telescope
-nnoremap <Leader>f :Telescope find_files<CR>
+nnoremap <leader>f :Telescope find_files find_command=rg,--files,--iglob,!.git,--hidden<CR>
 nnoremap <Leader>r :Telescope live_grep<CR>
 
 " Plugin-specific configuration
