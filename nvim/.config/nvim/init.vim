@@ -72,7 +72,8 @@ nnoremap <Leader>r :Telescope live_grep<CR>
 source ~/.config/nvim/startify.vim
 source ~/.config/nvim/vimwiki.vim
 
-lua require('nvim-tree')
 lua require('lsp-config')
+lua require('lsp-saga')
 lua require('completion')
 lua require('treesitter')
+lua require('filetree')
