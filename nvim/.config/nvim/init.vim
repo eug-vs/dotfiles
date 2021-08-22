@@ -70,3 +70,4 @@ source ~/.config/nvim/vimwiki.vim
 
 lua require('lsp-config')
 lua require('completion')
+lua require('treesitter')
