@@ -1,11 +1,8 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vimwiki/vimwiki'
     Plug 'mhinz/vim-startify'
-    " Dark-powered file explorer
-    Plug 'shougo/defx.nvim',
-    Plug 'kristijanhusak/defx-icons'
-    Plug 'kristijanhusak/defx-git'
-    Plug 't9md/vim-choosewin'
+    " Lua filetree
+    Plug 'kyazdani42/nvim-tree.lua'
     " Built-in LSP
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'

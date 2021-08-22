@@ -7,8 +7,8 @@ let g:startify_padding_left = 4
 let g:startify_custom_header = startify#pad(startify#fortune#cowsay('', '═','║','╔','╗','╝','╚'))
 
 let g:startify_bookmarks = [
-  \ { 'z': '~/.zshrc' },
-  \ { 'r': '~/.config/nvim/init.vim' },
+  \ { 'z': '~/.dotfiles/env/.zshrc' },
+  \ { 'r': '~/.dotfiles/nvim/.config/nvim/init.vim' },
 \ ]
 
 let g:startify_lists = [
@@ -20,6 +20,5 @@ let g:startify_lists = [
 autocmd VimEnter *
   \   if !argc()
   \ |   Startify
-  \ |   Defx
   \ |   wincmd w
   \ | endif
