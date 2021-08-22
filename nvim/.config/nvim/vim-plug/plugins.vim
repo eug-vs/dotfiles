@@ -13,8 +13,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'nvim-treesitter/playground'
     " Color scheme
-    Plug 'rktjmp/lush.nvim'
-    Plug 'ellisonleao/gruvbox.nvim'
+    Plug 'sainnhe/gruvbox-material'
     " Telescope
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'

@@ -34,7 +34,12 @@ set shiftwidth=2
 set showtabline=2
 
 " Colorscheme
-colorscheme gruvbox
+let g:gruvbox_material_enable_bold = 1
+let g:gruvbox_material_menu_selection_background = 'green'
+let g:gruvbox_material_sign_column_background = 'none'
+let g:gruvbox_material_visual = 'green background'
+let g:gruvbox_material_palette = 'original'
+colorscheme gruvbox-material
 
 " Built-in fuzzy-finder
 set path=.,**
