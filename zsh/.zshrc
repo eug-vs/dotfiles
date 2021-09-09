@@ -17,10 +17,6 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
-# FZF
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
@@ -34,15 +30,14 @@ alias t=task
 alias tw=timew
 alias s="sudo systemctl"
 
-# Env
-export LESS=R # Option to less so that git log/diff hide output after exit
-export EDITOR=nvim
+# FZF
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+# Node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH=$PATH:~/.local/bin
-
 
 # Syntax highlighting, must be last
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
