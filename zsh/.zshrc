@@ -31,8 +31,8 @@ alias tw=timew
 alias s="sudo systemctl"
 
 # FZF
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh 2> /dev/null
+source /usr/share/fzf/completion.zsh 2> /dev/null
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
@@ -40,4 +40,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Syntax highlighting, must be last
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /dev/null
