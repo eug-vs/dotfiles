@@ -97,3 +97,6 @@ context.office=-@shop -@home -@out
 context.home=-@work
 context.creative=+writing or +rnd
 context.braindead=+out or -writing -rnd -@laptop -@phone -@work
+
+# Taskserver
+include ~/.taskrc.server
