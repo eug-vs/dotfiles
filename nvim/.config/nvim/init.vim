@@ -65,8 +65,9 @@ nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " Telescope
-nnoremap <leader>f :Telescope find_files find_command=rg,--files,--iglob,!.git,--hidden<CR>
-nnoremap <Leader>r :Telescope live_grep<CR>
+" TODO: move this ugly line into a function or smth
+nnoremap <silent><leader>ff :lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({ previewer = false, find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' } }))<CR>
+nnoremap <silent><Leader>fr :Telescope live_grep<CR>
 
 " Plugin-specific configuration
 source ~/.config/nvim/startify.vim
