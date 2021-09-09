@@ -31,6 +31,17 @@ nvim_lsp.tsserver.setup {
   flags = flags,
 }
 
+-- Vue
+nvim_lsp.vuels.setup{
+  on_attach = on_attach,
+  flags = flags,
+}
+
+nvim_lsp.rust_analyzer.setup{
+  on_attach = on_attach,
+  flags = flags,
+}
+
 -- Lua
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
