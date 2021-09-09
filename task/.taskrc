@@ -99,4 +99,4 @@ context.creative=+writing or +rnd
 context.braindead=+out or -writing -rnd -@laptop -@phone -@work
 
 # Taskserver
-include ~/.taskrc.server
+include ~/.task/.taskrc.server
