@@ -1,0 +1,6 @@
+name: default
+root: ~/
+
+windows:
+  - cmatrix: cbonsai --life 40 --time 20 --screensaver
+  - spotify: sleep 5 && ~/spotify.sh
