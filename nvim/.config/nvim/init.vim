@@ -2,11 +2,6 @@
 " Author: eug-vs
 " Email: eugene@eug-vs.xyz
 
-" Load plugins
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath = &runtimepath
-source ~/.config/nvim/vim-plug/plugins.vim
-
 " Enter the current millenium
 set nocompatible
 syntax enable
@@ -64,12 +59,16 @@ autocmd BufWritePre * %s/\s\+$//e
 nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
+" Load plugins
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+lua require('plugins')
+
 " Telescope
 " TODO: move this ugly line into a function or smth
 nnoremap <silent><leader>ff :lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({ previewer = false, find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' } }))<CR>
 nnoremap <silent><Leader>fr :Telescope live_grep<CR>
 
-" Plugin-specific configuration
 source ~/.config/nvim/startify.vim
 source ~/.config/nvim/vimwiki.vim
 
