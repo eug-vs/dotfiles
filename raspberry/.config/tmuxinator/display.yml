@@ -1,0 +1,10 @@
+name: display
+root: ~/
+
+windows:
+  - dashboard:
+      layout: main-vertical
+      panes:
+        - cbonsai --life 40 --time 60 -liWC -m=$(/opt/vc/bin/vcgencmd measure_temp)
+        - ./clock.sh
+        - pipes.sh -t 5 -p 10
