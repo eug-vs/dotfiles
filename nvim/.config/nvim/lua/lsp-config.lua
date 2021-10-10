@@ -37,7 +37,14 @@ nvim_lsp.vuels.setup{
   flags = flags,
 }
 
+-- Rust
 nvim_lsp.rust_analyzer.setup{
+  on_attach = on_attach,
+  flags = flags,
+}
+
+-- Python
+nvim_lsp.pylsp.setup{
   on_attach = on_attach,
   flags = flags,
 }
