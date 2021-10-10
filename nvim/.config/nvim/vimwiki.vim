@@ -7,7 +7,7 @@ let g:vimwiki_list = [
 
 let g:vimwiki_markdown_link_ext = 1
 
-autocmd FileType vimwiki setlocal spell wrap linebreak
+autocmd FileType vimwiki,tex setlocal spell wrap linebreak
 
 nnoremap <Leader>c :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
 
