@@ -48,3 +48,6 @@ super + w
 
 super + n
   st -e nvim ~/Sync/diary/$(date +"%Y-%m-%d").md
+
+ctrl + space
+  dunstctl close
