@@ -29,6 +29,7 @@ alias g=git
 alias t=task
 alias tw=timew
 alias s="sudo systemctl"
+alias k=kubectl
 
 # FZF
 source /usr/share/fzf/key-bindings.zsh 2> /dev/null
