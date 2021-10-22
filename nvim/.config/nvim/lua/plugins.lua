@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
@@ -10,8 +10,18 @@ return require('packer').startup(function()
 
   -- Built-in LSP
   use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/nvim-compe'
-  use 'glepnir/lspsaga.nvim'
+
+  -- Autocompletion
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lua'
+  use 'onsails/lspkind-nvim'
+
+  -- Snippets (only used for autocompletion)
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
 
   -- Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }

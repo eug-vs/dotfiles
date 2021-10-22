@@ -17,6 +17,8 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+  buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
   buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   buf_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 end
@@ -25,28 +27,35 @@ local flags = {
   debounce_text_changes = 150,
 }
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
 -- Typescript
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   flags = flags,
+  capabilities = capabilities,
 }
 
 -- Vue
 nvim_lsp.vuels.setup{
   on_attach = on_attach,
   flags = flags,
+  capabilities = capabilities,
 }
 
 -- Rust
 nvim_lsp.rust_analyzer.setup{
   on_attach = on_attach,
   flags = flags,
+  capabilities = capabilities,
 }
 
 -- Python
 nvim_lsp.pylsp.setup{
   on_attach = on_attach,
   flags = flags,
+  capabilities = capabilities,
 }
 
 -- Lua
@@ -57,6 +66,7 @@ table.insert(runtime_path, "lua/?/init.lua")
 nvim_lsp.sumneko_lua.setup {
   on_attach = on_attach,
   flags = flags,
+  capabilities = capabilities,
   cmd = { '/usr/bin/lua-language-server' }, -- Install from yay
   settings = {
     Lua = {

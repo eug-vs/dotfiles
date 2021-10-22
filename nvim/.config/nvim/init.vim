@@ -41,6 +41,7 @@ set path=.,**
 set wildmenu
 set wildignore+=**/node_modules/**,**/build/**,**/dist/**,**/__pycache__/**
 set wildmode=longest,list,full
+set completeopt=menu,menuone,noselect
 
 " Easier window navigation
 nnoremap <c-h> <C-w>h
@@ -73,7 +74,6 @@ source ~/.config/nvim/startify.vim
 source ~/.config/nvim/vimwiki.vim
 
 lua require('lsp-config')
-lua require('lsp-saga')
 lua require('completion')
 lua require('treesitter')
 lua require('filetree')
