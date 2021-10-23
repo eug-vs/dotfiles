@@ -10,7 +10,7 @@ if [ $(echo $SELECTED | grep '.yml') ]; then
 else
   # Project directory was selected, find its full path (in any of the dirs)
   for dir in $PROJECTS_DIRS; do
-    FULL_PATH=$(find $dir -maxdepth 1 -type d -name $SELECTED)
+    FULL_PATH=$(find -L $dir -maxdepth 1 -type d -name $SELECTED)
     if [ -n "$FULL_PATH" ]; then
       # Start project based on the template
       tmuxinator start --no-attach -p=$HOME/.config/tmuxinator/.template.yml name=$SELECTED root=$FULL_PATH 2>/dev/null &
