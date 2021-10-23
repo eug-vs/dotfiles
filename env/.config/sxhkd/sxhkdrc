@@ -8,13 +8,13 @@ XF86AudioLowerVolume
   pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+2 dwmblocks
 
 XF86AudioPlay
-  playerctl --player=spotify play-pause
+  mpc toggle
 
 XF86AudioPrev
-  playerctl --player=spotify previous && sleep 0.1 && pkill -RTMIN+1 dwmblocks
+  mpc prev
 
 XF86AudioNext
-  playerctl --player=spotify next && sleep 0.1 && pkill -RTMIN+1 dwmblocks
+  mpc next
 
 XF86MonBrightnessUp
   xbacklight -inc 10 && pkill -RTMIN+3 dwmblocks
