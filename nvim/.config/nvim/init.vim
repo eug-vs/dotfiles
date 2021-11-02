@@ -53,6 +53,12 @@ nnoremap <c-l> <C-w>l
 vnoremap < <gv
 vnoremap > >gv
 
+" Moving selection
+noremap <leader>k :m .-2<CR>==
+noremap <leader>j :m .+1<CR>==
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
