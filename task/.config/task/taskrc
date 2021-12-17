@@ -2,7 +2,7 @@
 data.location=~/.task
 
 # Lower urgency of blocking tasks, default 8.0
-urgency.blocking.coefficient=7.0
+urgency.blocking.coefficient=2.0
 
 # Calendar
 displayweeknumber=0
@@ -25,6 +25,7 @@ color.scheduled=yellow
 color.until=yellow
 color.overdue=on red
 color.burndown.done=on cyan
+color.tag.next=black on green
 
 # Review
 uda.reviewed.type=date
@@ -36,10 +37,14 @@ report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +P
 
 # Taskserver
 include ~/.task/.taskrc.server
-context.braindead.read=+out or -writing -rnd -@laptop -@phone -@work
-context.creative.read=+writing or +rnd
-context.home.read=-@work
-context.home.write=-@work
-context.office.read=-@shop -@home -@out
-context.work.read=+@work
-context.work.write=+@work
+context.codex.read=+@codex
+context.codex.write=+@codex
+context.default.read=-@codex -writing -reading
+context.dev.read=+@laptop -@codex
+news.version=2.6.0
+context.dev.write=+@laptop
+context.writing.read=+writing
+context.writing.write=+writing
+context.reading.read=+reading
+context.reading.write=+reading
+context=dev
