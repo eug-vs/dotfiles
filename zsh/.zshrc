@@ -41,5 +41,29 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Functions
+function fzf-tmux-project() {
+  find "$HOME/Documents/Projects" -type d -exec test -e '{}/.git' ';' -print -prune | fzf --height 20% -m | while read root; do
+    name=$(basename "$root")
+    echo Starting $name
+    tmuxinator start --no-attach -p=$HOME/.config/tmuxinator/.template.yml name=$name root=$root 2>/dev/null
+  done;
+  zle accept-line
+}
+
+function fzf-kill-tmux-project() {
+  tmux ls -F "#{session_name}" | fzf --height 20% -m | while read session; do
+    tmux kill-session -t $session
+  done;
+  zle accept-line
+}
+
+zle -N fzf-tmux-project
+bindkey '^y' fzf-tmux-project
+
+zle -N fzf-kill-tmux-project
+bindkey '^x' fzf-kill-tmux-project
+
+
 # Syntax highlighting, must be last
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /dev/null
