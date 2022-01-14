@@ -31,6 +31,10 @@ alias tw=timew
 alias s="sudo systemctl"
 alias k=kubectl
 alias py=python
+alias grep="grep --color=auto"
+alias ls="ls --color=auto -hN --group-directories-first"
+alias cp="cp -v"
+alias rm="rm -v"
 
 # FZF
 source /usr/share/fzf/key-bindings.zsh 2> /dev/null
