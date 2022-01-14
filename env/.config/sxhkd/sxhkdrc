@@ -44,7 +44,7 @@ super + e
   st -e neomutt
 
 super + w
-  brave
+  librewolf
 
 super + n
   st -e nvim ~/Sync/diary/$(date +"%Y-%m-%d").md
