@@ -1,2 +1,2 @@
 #!/bin/sh
-tmux ls -F "#{session_name}" | dmenu -l 10 | xargs tmux kill-session -t
+tmux ls -F "#{session_name}" | dmenu | xargs tmux kill-session -t
