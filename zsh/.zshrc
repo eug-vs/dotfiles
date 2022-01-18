@@ -50,7 +50,9 @@ function fzf-tmux-project() {
   find "$HOME/Documents/Projects" -type d -exec test -e '{}/.git' ';' -print -prune | fzf --height 20% -m | while read root; do
     name=$(basename "$root")
     echo Starting $name
-    tmuxinator start --no-attach -p=$HOME/.config/tmuxinator/.template.yml name=$name root=$root 2>/dev/null
+    cd $root
+    tmux new-session -d -s $name \; send-keys "nvim" Enter \; split-window -h \; resize-pane -R 50 \; rename-window editor
+    cd -
   done;
   zle accept-line
 }
