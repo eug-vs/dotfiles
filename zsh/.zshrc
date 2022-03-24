@@ -28,6 +28,7 @@ alias vf=vifm
 alias g=git
 alias t=task
 alias tw=timew
+alias h=hledger
 alias s="sudo systemctl"
 alias k=kubectl
 alias py=python
