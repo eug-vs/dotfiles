@@ -27,6 +27,9 @@ color.overdue=on red
 color.burndown.done=on cyan
 color.tag.next=black on green
 
+# Disable recurrence (workaround for https://github.com/GothenburgBitFactory/taskserver/issues/46)
+recurrence=off
+
 # Review
 uda.reviewed.type=date
 uda.reviewed.label=Reviewed
@@ -47,4 +50,4 @@ context.writing.read=+writing
 context.writing.write=+writing
 context.reading.read=+reading
 context.reading.write=+reading
-context=dev
+context=default
