@@ -66,6 +66,10 @@ autocmd BufWritePre * %s/\s\+$//e
 nnoremap <leader>ev :vs $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
+" Built-in terminal
+autocmd TermOpen * setlocal nonumber | setlocal norelativenumber | startinsert
+tnoremap <Esc> <C-\><C-n>
+
 " Load plugins
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
