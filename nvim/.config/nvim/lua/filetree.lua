@@ -1,7 +1,6 @@
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 
 require'nvim-tree'.setup {
-  auto_close = true,
   open_on_setup = true,
   hijack_cursor = true,
   view = {
@@ -17,3 +16,4 @@ require'nvim-tree'.setup {
 }
 
 vim.api.nvim_set_keymap('n', '<F3>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_command('autocmd BufEnter * ++nested if winnr("$") == 1 && bufname() == "NvimTree_" . tabpagenr() | quit | endif')
