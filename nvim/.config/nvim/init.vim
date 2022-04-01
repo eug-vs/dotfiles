@@ -20,6 +20,7 @@ set mouse=a
 set clipboard=unnamedplus
 set scrolloff=3
 set conceallevel=0
+set laststatus=3
 
 " Indentation
 set smarttab expandtab
