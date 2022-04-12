@@ -16,7 +16,7 @@ report.scriptable.filter  = status:pending
 report.scriptable.sort    = urgency-
 
 # Gruvbox-like theme based on dark-yellow-green
-include /usr/share/doc/task/rc/dark-yellow-green.theme
+include /usr/share/task/rc/dark-yellow-green.theme
 color.active=black on bright yellow
 color.blocked=magenta
 color.blocking=red
@@ -39,7 +39,7 @@ report._reviewed.sort=reviewed+,modified+
 report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
 
 # Taskserver
-include ~/.task/.taskrc.server
+include ~/.config/task/taskrc.server
 context.codex.read=+@codex
 context.codex.write=+@codex
 context.default.read=-@codex -writing -reading
