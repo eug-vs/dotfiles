@@ -1,0 +1,8 @@
+app-admin/doas
+app-admin/stow
+app-editors/neovim
+app-shells/dash
+app-shells/zsh
+dev-vcs/git
+app-misc/vifm
+net-misc/ntp
