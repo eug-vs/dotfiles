@@ -1,0 +1,14 @@
+# /etc/conf.d/syncthing: config file for /etc/init.d/syncthing
+
+# User and group as which to run
+SYNCTHING_USER="eug-vs"
+SYNCTHING_GROUP="eug-vs"
+
+# Configuration directory
+SYNCTHING_HOMEDIR="/home/eug-vs/.config/syncthing"
+
+# Log file location
+#SYNCTHING_LOGFILE="/var/log/syncthing/syncthing.log"
+
+#SYNCTHING_GUI_ADDRESS="http://127.0.0.1:8384"
+#SYNCTHING_GUI_ADDRESS="unix:/run/syncthing.sock"
