@@ -18,7 +18,6 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
-  buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
   buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   buf_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 end
@@ -53,6 +52,12 @@ nvim_lsp.rust_analyzer.setup{
 
 -- Python
 nvim_lsp.pylsp.setup{
+  on_attach = on_attach,
+  flags = flags,
+  capabilities = capabilities,
+}
+
+nvim_lsp.ccls.setup {
   on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
