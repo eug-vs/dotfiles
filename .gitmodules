@@ -1,9 +1,3 @@
-[submodule "env/Documents/Projects/dwmblocks"]
-	path = env/Documents/Projects/dwmblocks
-	url = git@github.com:eug-vs/dwmblocks.git
-[submodule "env/Documents/Projects/st"]
-	path = env/Documents/Projects/st
-	url = git@github.com:eug-vs/st.git
 [submodule "portage/etc/portage/patches/x11-wm/dwm"]
 	path = portage/etc/portage/patches/x11-wm/dwm
 	url = git@eug-vs.xyz:suckless/dwm
