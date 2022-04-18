@@ -33,6 +33,10 @@ fi
 # increase keyboard speed
 xset r rate 250 50
 
+exec pipewire &
+exec pipewire-pulse &
+exec pipewire-media-session &
+
 exec xwallpaper --zoom ~/Pictures/Wallpapers/wallpaper.jpg &
 exec sxhkd &
 exec dwmblocks &
