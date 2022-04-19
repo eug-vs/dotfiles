@@ -1,6 +1,6 @@
+=app-editors/neovim-9999
 app-admin/doas
 app-admin/stow
-app-editors/neovim
 app-shells/dash
 app-shells/zsh
 dev-vcs/git

@@ -5,4 +5,6 @@ mail-client/neomutt
 
 net-news/newsboat
 
-dev-haskell/hledger
+app-office/hledger
+
+net-p2p/syncthing

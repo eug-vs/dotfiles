@@ -1,0 +1,4 @@
+sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
+net-im/slack *
+media-libs/raylib *
+media-sound/spotify *

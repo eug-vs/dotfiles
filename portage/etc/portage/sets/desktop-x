@@ -1,0 +1,15 @@
+# Minimal setup to run Xorg with dwm + st
+x11-apps/xinit
+x11-apps/xset
+
+x11-base/xorg-server
+x11-wm/dwm
+x11-misc/dmenu
+media-fonts/fira-code
+
+# st
+x11-libs/libXft
+media-libs/harfbuzz
+
+# dwmblocks
+x11-misc/xkblayout-state
