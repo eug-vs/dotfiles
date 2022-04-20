@@ -401,6 +401,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Start shell in current directory
 nnoremap s :shell<cr>
+nnoremap q :execute '!echo %d > ~/.config/vifm/lastdir' | quit<cr>
 
 " Display sorting dialog
 nnoremap S :sort<cr>
