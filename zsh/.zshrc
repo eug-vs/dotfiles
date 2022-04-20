@@ -73,10 +73,11 @@ bindkey '^x' fzf-kill-tmux-project
 
 # Use vifm to switch directories and bind it to ctrl-o
 function vifmcd () {
-  vifm .
+  lastdir=~/.cache/vifm_lastdir
+  vifm . -c ":o" --choose-dir=$lastdir
 
-  if [ -f ~/.config/vifm/lastdir ]; then
-      cd $(cat ~/.config/vifm/lastdir)
+  if [ -f $lastdir ]; then
+      cd $(cat $lastdir)
   fi
 }
 bindkey -s '^o' 'vifmcd\n'
