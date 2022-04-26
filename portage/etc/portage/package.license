@@ -1,4 +1,13 @@
 sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
+x11-drivers/nvidia-drivers *
+
 net-im/slack *
-media-libs/raylib *
+net-im/discord-bin *
+
 media-sound/spotify *
+
+*/*::steam-overlay *
+
+dev-db/mongodb *
+media-libs/raylib *
+dev-util/openring *
