@@ -40,7 +40,4 @@ exec sxhkd &
 exec dwmblocks &
 exec redshift -l 53.54:27.34 &
 
-# Start dwm with restart behaviour
-while true; do
-    dwm >/dev/null 2>&1
-done
+dbus-launch --sh-syntax --exit-with-session dwm
