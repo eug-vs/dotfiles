@@ -1,8 +1,0 @@
-=app-editors/neovim-9999
-app-admin/doas
-app-admin/stow
-app-shells/dash
-app-shells/zsh
-dev-vcs/git
-app-misc/vifm
-net-misc/ntp

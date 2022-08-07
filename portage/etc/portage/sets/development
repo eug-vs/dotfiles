@@ -1,8 +1,0 @@
-dev-db/mongodb
-app-containers/docker
-dev-util/github-cli
-sys-apps/fd
-sys-apps/ripgrep
-sys-apps/yarn
-net-misc/httpie
-
