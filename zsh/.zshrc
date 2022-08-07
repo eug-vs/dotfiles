@@ -1,6 +1,13 @@
 autoload -U colors && colors
-PS1="%B%{$fg[white]%}[%{$fg[cyan]%}%n%{$fg[white]%}@%{$fg[green]%}%M %{$fg[yellow]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
 bindkey -e
+
+# Shell prompt
+if [ $(id -u) -eq 0 ];
+then # you are root, set red colour prompt
+  PS1="%B%{$fg[white]%}[%{$fg[red]%}%n%{$fg[white]%}@%{$fg[green]%}%M %{$fg[yellow]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
+else
+  PS1="%B%{$fg[white]%}[%{$fg[cyan]%}%n%{$fg[white]%}@%{$fg[green]%}%M %{$fg[yellow]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
+fi
 
 # History in cache directory:
 export HISTSIZE=10000
