@@ -1,11 +1,11 @@
 XF86AudioMute
-  pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+2 dwmblocks
+  unset PULSE_SERVER && pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+2 dwmblocks
 
 XF86AudioRaiseVolume
-  pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+2 dwmblocks
+  unset PULSE_SERVER && pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+2 dwmblocks
 
 XF86AudioLowerVolume
-  pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+2 dwmblocks
+  unset PULSE_SERVER && pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+2 dwmblocks
 
 XF86AudioPlay
   mpc toggle
