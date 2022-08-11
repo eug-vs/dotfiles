@@ -1,6 +1,0 @@
-[submodule "portage/etc/portage/patches/x11-wm/dwm"]
-	path = portage/etc/portage/patches/x11-wm/dwm
-	url = git@eug-vs.xyz:suckless/dwm
-[submodule "portage/etc/portage/patches/x11-misc/dmenu"]
-	path = portage/etc/portage/patches/x11-misc/dmenu
-	url = git@eug-vs.xyz:suckless/dmenu
