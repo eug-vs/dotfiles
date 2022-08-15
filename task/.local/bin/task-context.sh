@@ -1,4 +1,3 @@
 #!/bin/sh
-# TODO: list contexts using taskwarrior
 
-echo "none default dev codex reading writing" | sed 's/ /\n/g' | dmenu | xargs task context
+task context | grep '^[a-z]*' --only-matching | dmenu | xargs task context
