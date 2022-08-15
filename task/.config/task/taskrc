@@ -40,10 +40,8 @@ report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +P
 
 # Taskserver
 include ~/.config/task/taskrc.server
-context.codex.read=+@codex
-context.codex.write=+@codex
-context.default.read=-@codex -writing -reading
-context.dev.read=+@laptop -@codex
+context.default.read=-writing -reading
+context.dev.read=+@laptop
 news.version=2.6.0
 context.dev.write=+@laptop
 context.writing.read=+writing
