@@ -41,7 +41,7 @@ super + v
   st -e vifm
 
 super + e
-  st -e neomutt
+  (mailsync &) && st -e neomutt
 
 super + w
   librewolf
