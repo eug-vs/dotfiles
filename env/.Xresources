@@ -30,4 +30,4 @@ st.foreground: #ebdbb2
 *.foreground: #ebdbb2
 *.selbackground: #ebdbb2
 *.selforeground: #1d2021
-*.font: Liberation Mono:pixelsize=14:antialias=true:autohint=true
+*.font: Liberation Mono:pixelsize=12:antialias=true:autohint=true

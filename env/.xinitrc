@@ -40,4 +40,4 @@ exec sxhkd &
 exec dwmblocks &
 exec redshift -l 53.54:27.34 &
 
-dbus-launch --sh-syntax --exit-with-session dwm
+exec dbus-launch --sh-syntax --exit-with-session dwm
