@@ -3,6 +3,7 @@ data.location=~/.task
 
 # Lower urgency of blocking tasks, default 8.0
 urgency.blocking.coefficient=2.0
+urgency.user.tag.profit.coefficient=2.5
 
 # Calendar
 displayweeknumber=0
