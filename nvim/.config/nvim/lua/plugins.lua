@@ -42,4 +42,7 @@ return require('packer').startup(function(use)
   use 'airblade/vim-gitgutter'
   use 'Raimondi/delimitMate'
   use 'tonchis/vim-to-github'
+
+  -- Typescript enhanced features
+  use 'jose-elias-alvarez/typescript.nvim'
 end)

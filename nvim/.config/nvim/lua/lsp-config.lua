@@ -18,6 +18,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  buf_set_keymap('n', 'L', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
   buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   buf_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 end
@@ -34,7 +35,36 @@ nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
+  root_dir = nvim_lsp.util.root_pattern("package.json"),
 }
+-- Enhanced features
+require('typescript').setup {
+  server = {
+    on_attach = on_attach,
+  },
+  flags = flags,
+  capabilities = capabilities,
+  disable_commands = false,
+  go_to_source_definition = {
+    fallback = true,
+  },
+}
+
+
+-- Eslint
+nvim_lsp.eslint.setup {
+  on_attach = on_attach,
+  flags = flags,
+  capabilities = capabilities,
+}
+
+-- Prisma
+nvim_lsp.prismals.setup {
+  on_attach = on_attach,
+  flags = flags,
+  capabilities = capabilities,
+}
+
 
 -- Vue
 nvim_lsp.vuels.setup{
@@ -57,10 +87,19 @@ nvim_lsp.pylsp.setup{
   capabilities = capabilities,
 }
 
+-- C
 nvim_lsp.ccls.setup {
   on_attach = on_attach,
   flags = flags,
   capabilities = capabilities,
+}
+
+-- Deno
+nvim_lsp.denols.setup {
+  on_attach = on_attach,
+  flags = flags,
+  capabilities = capabilities,
+  root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
 }
 
 -- Lua
