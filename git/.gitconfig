@@ -1,7 +1,10 @@
 [user]
 	email = eugene@eug-vs.xyz
 	name = eug-vs
+	signingkey = 0BC08C36B66DCDFB
 [core]
 	editor = nvim
 [pull]
 	rebase = true
+[commit]
+	gpgsign = true
